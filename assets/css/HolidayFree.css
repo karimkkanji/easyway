@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'HolidayFree';
+	src: url(../../assets/fonts/HolidayFree.eot) format('embedded-opentype'),
+	url(../../assets/fonts/HolidayFree.woff) format('woff'),
+	url(../../assets/fonts/HolidayFree.ttf) format('truetype'),
+	url(../../assets/fonts/HolidayFree.svg) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
