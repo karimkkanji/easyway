@@ -41,19 +41,19 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand sticky-top navigation-clean-search" style="background-color: #F76565;">
-        <div class="container"><a class="navbar-brand" href="index.html" style="font-family: HolidayFree;font-size: 30px;">EasyWay</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-dark navbar-expand sticky-top navigation-clean-search" style="background-color: #F76565;height: 50px;">
+        <div class="container"><a class="navbar-brand" href="./" style="font-family: HolidayFree;font-size: 30px;">EasyWay</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item dropdown dropdown-menu-right" style="margin-top: 20px;"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><img class="rounded-circle" src="assets/img/profile.jpg" width="50px"></a>
+                        <div class="dropdown-menu" role="menu" style="line-height: 2;"><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';" data-toggle="modal" data-target="#profile">My Profile</a><a class="dropdown-item" role="presentation" href="calendar-reservations.html"
+                                style="font-family: 'SF UI Text Medium';">Calendar</a><a class="dropdown-item" role="presentation" href="my-reservations.html" style="font-family: 'SF UI Text Medium';">My Reservation</a><a class="dropdown-item" role="presentation"
+                                href="packages-created.html" style="font-family: 'SF UI Text Medium';">My Packages</a><a class="dropdown-item" role="presentation" href="create-activity.html" style="font-family: 'SF UI Text Medium';">Create</a><a class="dropdown-item"
+                                role="presentation" href="#" style="font-family: 'SF UI Text Medium';color: #F76565;">Sign In / Sign Up</a></div>
+                    </li>
                 </ul>
-                <div class="dropdown dropdown-menu-right"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><img class="rounded-circle" src="assets/img/profile.jpg" width="50px"></a>
-                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';" data-toggle="modal" data-target="#profile">My Profile</a><a class="dropdown-item" role="presentation" href="calendar-reservations.html"
-                            style="font-family: 'SF UI Text Medium';">Calendar</a><a class="dropdown-item" role="presentation" href="my-reservations.html" style="font-family: 'SF UI Text Medium';">My Reservation</a><a class="dropdown-item" role="presentation"
-                            href="packages-created.html" style="font-family: 'SF UI Text Medium';">My Packages</a><a class="dropdown-item" role="presentation" href="create-activity.html" style="font-family: 'SF UI Text Medium';">Create</a><a class="dropdown-item"
-                            role="presentation" href="#" style="font-family: 'SF UI Text Medium';color: #F76565;">Sign In / Sign Up</a></div>
-                </div>
         </div>
         </div>
     </nav>
@@ -62,11 +62,11 @@
     </div>
     <div class="container" style="margin-bottom: 60px;">
         <div class="row" style="border-radius: 25px;box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
-            <div class="col-3">
+            <div class="col-md-3">
                 <div style="padding: 10px 10px 0 10px;margin-top: 10px;border-right: 1px #c8c8c8 solid;">
-                    <h4 style="font-family: 'SF UI Text Semibold';margin-bottom: 3px;">Location</h4>
+                    <h6 class="text-uppercase" style="font-family: 'SF UI Text Semibold';margin-bottom: 3px;font-size: 12px;">Location</h6>
                 </div>
-                <div class="dropdown" style="margin-bottom: 20px;"><button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="font-family: 'SF UI Text Light';">Where are you going?</button>
+                <div class="dropdown" style="margin-bottom: 20px;"><button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Where are you going?</button>
                     <div class="dropdown-menu" role="menu" style="width: 245px;margin-left: 25px;"><a class="dropdown-item" role="presentation" href="#">North<div class="container-check"><input type="checkbox" checked=""><span class="checkmark"></span></div></a>
                         <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">South<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a>
                         <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">East<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a>
@@ -74,17 +74,17 @@
                         <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">Around Mauritius<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a></div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
                 <div style="padding: 10px 10px 0 10px;margin-top: 10px;border-right: 1px #c8c8c8 solid;">
-                    <h4 style="font-family: 'SF UI Text Semibold';margin-bottom: 3px;">Date of exploration</h4><div class="tui-datepicker-input tui-datetime-input tui-has-focus">
-    <input type="text" placeholder="Add a date" id="tui-date-picker-target" aria-label="Date-Time" style="outline: none;">
+                    <h6 class="text-uppercase" style="font-family: 'SF UI Text Semibold';margin-bottom: 3px;font-size: 12px;">Date of exploration</h6><div class="tui-datepicker-input tui-datetime-input tui-has-focus">
+    <input type="text" placeholder="Add a date" id="tui-date-picker-target" aria-label="Date-Time" style="outline: none; width:100px;">
 </div>
 
 <div id="tui-date-picker-container" style="margin-top: -1px;"></div></div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
                 <div style="padding: 10px 10px 0 10px;margin-top: 10px;/*border-right: 1px #c8c8c8 solid;*/">
-                    <h4 style="font-family: 'SF UI Text Semibold';margin-bottom: 3px;">Places</h4>
+                    <h6 class="text-uppercase" style="font-family: 'SF UI Text Semibold';margin-bottom: 3px;font-size: 12px;">Places</h6>
                     <div class="dropdown" style="margin-bottom: 20px;"><button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="font-family: 'SF UI Text Light';">Choose your transport</button>
                         <div class="dropdown-menu" role="menu" style="width: 245px;margin-left: 25px;"><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';">Van<div class="container-check"><input type="checkbox" checked=""><span class="checkmark"></span></div></a><small class="form-text text-muted"
                                 style="margin-top: -20px;margin-left: 25px;margin-bottom: 20px;font-family: 'SF UI Text Light';">15 Places</small>
@@ -96,7 +96,7 @@
             </div>
         </div>
     </div>
-    <div class="col-3"><button class="btn btn-danger btn-lg float-right" type="button" style="margin-top: 21px;padding: 10px 50px;border-radius: 12px;">Reserve</button></div>
+    <div class="col-md-3"><button class="btn btn-danger btn-lg float-right" type="button" style="margin-top: 21px;padding: 10px 50px;border-radius: 12px;background: rgb(255,49,81);background: linear-gradient(144deg, rgba(255,49,81,1) 0%, rgba(232,28,84,1) 35%, rgba(204,1,88,1) 100%);">Reserve</button></div>
     </div>
     </div>
     <div class="container">
@@ -110,8 +110,8 @@
             </div>
             <div class="card" style="margin: 10px;height: 220px;border: none;">
                 <div class="card-body text-light" style="border-radius: 26px;background-image: url(&quot;assets/img/christian-lambert-vmIWr-6@2x.png&quot;);background-position: center;background-size: auto;background-repeat: no-repeat;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);"
-                    onclick="document.location = &quot;campement.html&quot;">
-                    <h4 class="card-title text-center mx-auto" style="font-family: 'Gilroy-Bold ☞';margin-bottom: 3px;margin-top: 75px;">Campement</h4>
+                    onclick="document.location = &quot;bungalow.html&quot;">
+                    <h4 class="card-title text-center mx-auto" style="font-family: 'Gilroy-Bold ☞';margin-bottom: 3px;margin-top: 75px;">Bungalow</h4>
                 </div>
             </div>
             <div class="card" style="margin: 10px;height: 220px;border: none;">
@@ -148,14 +148,14 @@
     <ul class="nav">
         <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fab fa-facebook-f" style="font-size: 26px;"></i></a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fab fa-instagram" style="font-size: 26px;"></i></a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="far fa-envelope" style="font-size: 26px;"></i><span style="font-family: 'Gilroy-Medium ☞';"> Contact us</span></a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="far fa-envelope" style="font-size: 26px;"></i><span style="font-family: 'Gilroy-Medium ☞'; margin-left:8px;"> Contact us</span></a></li>
         <ul>
             </div>
 <ul class="nav">
-    <li class="nav-item"><a class="nav-link text-dark" href="index.html" style="font-family: 'Gilroy-Medium ☞';">Home</a></li>
+    <li class="nav-item"><a class="text-uppercase nav-link text-dark" href="index.html" style="font-family: 'Gilroy-Medium ☞';">Home</a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="activities.html" style="font-family: 'Gilroy-Medium ☞';">Activities</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="#" style="font-family: 'Gilroy-Medium ☞';">Campement</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="#" style="font-family: 'Gilroy-Medium ☞';">Hotel</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="bungalow.html" style="font-family: 'Gilroy-Medium ☞';">Bungalows</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="hotel.html" style="font-family: 'Gilroy-Medium ☞';">Hotel</a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="rent-a-car.html" style="font-family: 'Gilroy-Medium ☞';">Rent a car</a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="calendar-reservations.html" style="font-family: 'Gilroy-Medium ☞';">Calendar</a></li>
 </ul>
