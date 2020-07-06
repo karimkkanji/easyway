@@ -31,8 +31,8 @@ python -m venv venv
 source venv/bin/activate
 ```
 
---------------------------------------
 4. Install project based requirements by typing
+
 ```
 pip install -r dev_requirements.txt
 ```
