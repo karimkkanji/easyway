@@ -1,1 +1,5 @@
 Django==2.2.2
+django-google-maps==0.12.1
+Pillow==5.0.0
+pytz==2020.1
+sqlparse==0.3.1
