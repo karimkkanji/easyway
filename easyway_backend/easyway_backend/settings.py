@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'easyway',
+    'django_google_maps',
 ]
 
 MIDDLEWARE = [
@@ -117,5 +118,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
+
+GOOGLE_MAPS_API_KEY = "AIzaSyAkkzGA9Q9BN-tCBNAX42X4HH8skBObjkM"
 
 STATIC_URL = '/static/'
