@@ -37,6 +37,7 @@ class hotel(models.Model):
 	discount_per_person = models.SmallIntegerField(50)
 	group_discount_per_person = models.SmallIntegerField(50)
 	activity_title = models.ForeignKey('activities',on_delete = models.SET_NULL,  null=True)
+	email = models.ForeignKey('customers',on_delete = models.SET_NULL, null=True)
 
 
 class rent_car(models.Model):
