@@ -4,3 +4,5 @@ with the corresponding database fields as defined by models, user can add their 
 and or update their details.
 
 The doc strings in the api side code will aid in integrating the front end.
+
+Reinstall the dev requirements

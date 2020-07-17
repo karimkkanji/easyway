@@ -1,5 +1,5 @@
 from django.db import models
-from django_google_maps import fields as map_fields
+# from django_google_maps import fields as map_fields
 from django.contrib.auth.models import User
 
 # Create your models here.
@@ -30,8 +30,8 @@ class hotel(models.Model):
 	No_of_baths = models.IntegerField(8)
 	No_of_toilets = models.IntegerField(8)
 	more_details = models.TextField(max_length =200)
-	address = map_fields.AddressField(max_length=200, blank=True, null=True)
-	geolocation = map_fields.GeoLocationField(max_length=100,blank=True, null=True)
+	# address = map_fields.AddressField(max_length=200, blank=True, null=True)
+	# geolocation = map_fields.GeoLocationField(max_length=100,blank=True, null=True)
 	checkin = models.TimeField(auto_now_add = True)
 	checkout = models.TimeField(auto_now_add = True)
 	discount_per_person = models.SmallIntegerField(50)
@@ -44,16 +44,16 @@ class rent_car(models.Model):
 	car_model = models.CharField(max_length = 200)
 	add_photos = models.ImageField(upload_to = "cars/",null=True)
 	more_details = models.TextField(max_length = 200)
-	address = map_fields.AddressField(max_length=200,blank=True, null=True)
-	geolocation = map_fields.GeoLocationField(max_length=100,blank=True, null=True)
+	# address = map_fields.AddressField(max_length=200,blank=True, null=True)
+	# geolocation = map_fields.GeoLocationField(max_length=100,blank=True, null=True)
 	place_available = models.TextField(20)
 	discount_per_person = models.SmallIntegerField(50)
 	activity_title = models.ForeignKey('activities', on_delete = models.SET_NULL, null=True)
 
 class activities(models.Model):
 	activity_title = models.TextField(max_length = 20)
-	address = map_fields.AddressField(max_length=200, blank=True, null=True)
-	geolocation = map_fields.GeoLocationField(max_length=100, blank=True, null=True)
+	# address = map_fields.AddressField(max_length=200, blank=True, null=True)
+	# geolocation = map_fields.GeoLocationField(max_length=100, blank=True, null=True)
 	days = models.DateTimeField()
 	opening_hours = models.DateTimeField()
 	age = models.IntegerField()

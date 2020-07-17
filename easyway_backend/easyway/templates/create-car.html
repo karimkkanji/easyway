@@ -1,16 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<title>EasyWay</title>
-</head>
-<body bgcolor="#BDBDBD">
-	<center>
-<h1>Welcome to EasyWay</h1>
-
-</center>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html>
 
@@ -43,14 +30,6 @@
     <link rel="stylesheet" href="../media/assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="../media/assets/css/Header-Blue.css">
     <link rel="stylesheet" href="../media/assets/css/styles.css">
-<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
-
-<!-- If you use the default popups, use this. -->
-
-
-<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.css" />
-
-<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.css" />
 </head>
 
 <body>
@@ -60,7 +39,7 @@
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item dropdown dropdown-menu-right" style="margin-top: 20px;"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><img class="rounded-circle" src="../media/assets/img/profile.jpg" width="50px"></a>
+                    <li class="nav-item dropdown dropdown-menu-right" style="margin-top: 20px;"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><img class="rounded-circle" src="assets/img/profile.jpg" width="50px"></a>
                         <div class="dropdown-menu" role="menu" style="line-height: 2;"><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';" data-toggle="modal" data-target="#profile">My Profile</a><a class="dropdown-item" role="presentation" href="calendar-reservations.html"
                                 style="font-family: 'SF UI Text Medium';">Calendar</a><a class="dropdown-item" role="presentation" href="my-reservations.html" style="font-family: 'SF UI Text Medium';">My Reservation</a><a class="dropdown-item" role="presentation"
                                 href="packages-created.html" style="font-family: 'SF UI Text Medium';">My Packages</a><a class="dropdown-item" role="presentation" href="create-activity.html" style="font-family: 'SF UI Text Medium';">Create</a><a class="dropdown-item"
@@ -70,67 +49,48 @@
         </div>
         </div>
     </nav>
-    <div class="container" style="margin-top: 50px;">
-        <h4 style="font-family: 'Gilroy-Medium ☞';margin-left: -9px;">Explore Mauritius</h4>
-    </div>
-    <div class="container" style="margin-bottom: 60px;">
-        <div class="row" style="border-radius: 25px;box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
-            <div class="col-md-3">
-                <div style="padding: 10px 10px 0 10px;margin-top: 10px;border-right: 1px #c8c8c8 solid;">
-                    <h6 class="text-uppercase" style="font-family: 'SF UI Text Semibold';margin-bottom: 3px;font-size: 12px;">Location</h6>
+    <div style="margin-top: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xl-3">
+                    <ul class="list-group" style="font-family: 'SF UI Text Light';">
+                        <li class="list-group-item" style="border: none;font-family: 'SF UI Text Light';"><i class="fas fa-plus-square" style="margin-right: 10px;color: #F76565;"></i><span style="color: #F76565;font-family: 'SF UI Text Bold';">Create</span>
+                            <ul class="list-unstyled" style="margin-left: 20px;">
+                                <li style="margin: 5px;"><a class="text-dark" href="create-activity.html">Activity<br></a></li>
+                                <li style="margin: 5px;"><a class="text-dark" href="create-event.html">Event<br></a></li>
+                                <li style="margin: 5px;"><a class="text-dark" href="create-bungalow.html">Bungalow<br></a></li>
+                                <li style="margin: 5px;">Hotel</li>
+                                <li style="margin: 5px;color: #F76565;font-family: 'SF UI Text Bold';">Car to rent</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item" style="border: none !important;"><i class="far fa-calendar-alt" style="margin-right: 10px;"></i><span>Calendar</span></li>
+                        <li class="list-group-item" style="border: none !important;"><i class="far fa-check-circle" style="margin-right: 10px;"></i><span>My Reservations</span></li>
+                        <li class="list-group-item" style="border: none !important;"><i class="fas fa-hand-holding-heart" style="margin-right: 10px;"></i><span>My Packages</span></li>
+                    </ul>
                 </div>
-                <div class="dropdown" style="margin-bottom: 20px;"><button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Where are you going?</button>
-                    <div class="dropdown-menu" role="menu" style="width: 245px;margin-left: 25px;"><a class="dropdown-item" role="presentation" href="#">North<div class="container-check"><input type="checkbox" checked=""><span class="checkmark"></span></div></a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">South<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">East<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">West<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">Around Mauritius<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a></div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div style="padding: 10px 10px 0 10px;margin-top: 10px;border-right: 1px #c8c8c8 solid;">
-                    <h6 class="text-uppercase" style="font-family: 'SF UI Text Semibold';margin-bottom: 3px;font-size: 12px;">Date of exploration</h6><div class="tui-datepicker-input tui-datetime-input tui-has-focus">
-    <input type="text" placeholder="Add a date" id="tui-date-picker-target" aria-label="Date-Time" style="outline: none; width:100px;">
-</div>
-
-<div id="tui-date-picker-container" style="margin-top: -1px;"></div></div>
-            </div>
-            <div class="col-md-3">
-                <div style="padding: 10px 10px 0 10px;margin-top: 10px;/*border-right: 1px #c8c8c8 solid;*/">
-                    <h6 class="text-uppercase" style="font-family: 'SF UI Text Semibold';margin-bottom: 3px;font-size: 12px;">Places</h6>
-                    <div class="dropdown" style="margin-bottom: 20px;"><button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="font-family: 'SF UI Text Light';">Choose your transport</button>
-                        <div class="dropdown-menu" role="menu" style="width: 245px;margin-left: 25px;"><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';">Van<div class="container-check"><input type="checkbox" checked=""><span class="checkmark"></span></div></a><small class="form-text text-muted"
-                                style="margin-top: -20px;margin-left: 25px;margin-bottom: 20px;font-family: 'SF UI Text Light';">15 Places</small>
-                            <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';">Minibus<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div><small class="form-text text-muted" style="margin-top: -16px;margin-left: 2px;margin-bottom: 20px;font-family: 'SF UI Text Light';">35 Places</small></a>
-                            <div
-                                class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';">Bus<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div><small class="form-text text-muted" style="margin-top: -16px;margin-left: 2px;margin-bottom: 20px;font-family: 'SF UI Text Light';">60 Places</small></a>
-                        <div
-                            class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Semibold';">Rent a car<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a></div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3"><button class="btn btn-danger btn-lg float-right" type="button" style="margin-top: 21px;padding: 10px 50px;border-radius: 12px;background: rgb(255,49,81);background: linear-gradient(144deg, rgba(255,49,81,1) 0%, rgba(232,28,84,1) 35%, rgba(204,1,88,1) 100%);">Reserve</button></div>
-    </div>
-    </div>
-    <div class="container">
-        <h1 class="text-danger" style="font-family: HolidayFree;">Embrace <br>&nbsp; Mauritius</h1>
-        <div class="card-group" style="margin-top: 10px;margin-bottom: 80px;">
-            <div class="card" style="margin: 10px;height: 220px;border: none;">
-                <div class="card-body text-light" style="border-radius: 26px;background-image: url(&quot;../media/assets/img/experience1.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);"
-                    onclick="document.location=&quot;activities.html&quot;">
-                    <h4 class="card-title text-center mx-auto" style="font-family: 'Gilroy-Bold ☞';margin-bottom: 3px;margin-top: 75px;">Activities</h4>
-                </div>
-            </div>
-            <div class="card" style="margin: 10px;height: 220px;border: none;">
-                <div class="card-body text-light" style="border-radius: 26px;background-image: url(&quot;../media/assets/img/christian-lambert-vmIWr-6@2x.png&quot;);background-position: center;background-size: auto;background-repeat: no-repeat;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);"
-                    onclick="document.location = &quot;bungalow.html&quot;">
-                    <h4 class="card-title text-center mx-auto" style="font-family: 'Gilroy-Bold ☞';margin-bottom: 3px;margin-top: 75px;">Bungalow</h4>
-                </div>
-            </div>
-            <div class="card" style="margin: 10px;height: 220px;border: none;">
-                <div class="card-body text-light" style="border-radius: 26px;background-image: url(&quot;../media/assets/img/sara-dubler-Koei_-1.png&quot;);background-position: center;background-size: auto;background-repeat: no-repeat;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);"
-                    onclick="document.location = &quot;hotel.html&quot;">
-                    <h4 class="card-title text-center mx-auto" style="font-family: 'Gilroy-Bold ☞';margin-bottom: 3px;margin-top: 75px;">Hotel</h4>
+                <div class="col-md-9">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-6 col-xl-8 offset-xl-2" style="font-family: 'SF UI Text Light';">
+                                <div class="form-group"><input class="form-control" type="text" placeholder="Model of the car"></div><label>Add Photos</label>
+                                <div class="form-group"><input type="file" multiple=""></div>
+                                <div class="form-group"><textarea class="form-control" placeholder="More Details" rows="10"></textarea></div>
+                                <div class="form-group"><input class="form-control" type="number"></div>
+                                <div class="form-group">
+                                    <div class="form-row">
+                                        <div class="col-md-9"><input class="form-control" type="text" placeholder="Location"></div>
+                                        <div class="col-md-3"><a href="#">Open Map<br></a></div>
+                                    </div>
+                                </div>
+                                <div class="form-group"><input class="form-control" type="text" placeholder="Place available"></div>
+                                <div class="form-group">
+                                    <div class="form-row">
+                                        <div class="col"><input class="form-control" type="text" placeholder="Price/Person" style="margin-top: 32px;"></div>
+                                        <div class="col"><label>Discount Price</label><input class="form-control" type="text" placeholder="Final Price/Person"></div>
+                                    </div><small class="form-text text-muted">EasyWay take 15% on the total price of the reserve purchase of the activity and the&nbsp;additional fun. If a customer cancel the purchase less than 48hours before the&nbsp;confirmation date 35% on the total will be given to you.</small></div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -139,7 +99,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content" style="border-radius: 25px;">
                 <div class="modal-body">
-                    <div class="text-center mx-auto"><img class="rounded-circle" src="../media/assets/img/profile.jpg" width="50px" style="width: 60px;">
+                    <div class="text-center mx-auto"><img class="rounded-circle" src="assets/img/profile.jpg" width="50px" style="width: 60px;">
                         <p style="font-family: 'SF UI Text Medium';">Change Profile Photo</p>
                     </div><input type="text" class="form-control" placeholder="First Name" style="border-radius: 10px 10px 0 0;border: solid 1.4px;font-family: 'SF UI Text Light';"><input type="text" class="form-control" placeholder="Last Name" style="border-radius: 0 0 10px 10px;border: solid 1.4px;font-family: 'SF UI Text Light';">
                     <small
@@ -157,7 +117,9 @@
     </div>
     </div>
     </div>
-    <div class="container" style="margin-top: 10px;border-top: solid 1px #ff0000;padding-top: 20px;margin-bottom: 20px;"><div class="float-right" style="">
+    <div class="container mx-auto text-center" style="margin-top: 20px;"><button class="btn btn-primary" type="button" style="width: 250px;border-radius: 5px;background: rgb(255,49,81);background: linear-gradient(144deg, rgba(255,49,81,1) 0%, rgba(232,28,84,1) 35%, rgba(204,1,88,1) 100%);">Confirm</button></div>
+    <div class="container"
+        style="margin-top: 10px;border-top: solid 1px #ff0000;padding-top: 20px;margin-bottom: 20px;"><div class="float-right" style="">
     <ul class="nav">
         <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fab fa-facebook-f" style="font-size: 26px;"></i></a></li>
     <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fab fa-instagram" style="font-size: 26px;"></i></a></li>
@@ -180,7 +142,6 @@
     <script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.min.js"></script>
     <script src="https://uicdn.toast.com/tui.dom/v3.0.0/tui-dom.js"></script>
     <script src="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.min.js"></script>
-    <script src="../media/assets/js/initialise.js"></script>
 </body>
 
 </html>

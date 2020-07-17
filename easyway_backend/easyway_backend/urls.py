@@ -25,15 +25,7 @@ from easyway import views
 urlpatterns = [
 
     url(r'^admin/', admin.site.urls),
-    url(r'^api/customers/$', views.customers_list),
-    url(r'^api/customers/(?P<pk>[0-9]+)$', views.customers_detail),
-    url(r'^api/hotel/$', views.hotel_list),
-    url(r'^api/hotel/(?P<pk>[0-9]+)$', views.hotel_detail),
-    url(r'^api/rent_car/$', views.rent_car_list),
-    url(r'^api/rent_car/(?P<pk>[0-9]+)$', views.rent_car_detail),
-    url(r'^api/activities/$', views.activities_list),
-    url(r'^api/activities/(?P<pk>[0-9]+)$', views.activities_detail),
-    # url(r'^tinymce/', include('tinymce.urls')),
+    url(r'^tinymce/', include('tinymce.urls')),
     url(r'',include('easyway.urls')),
     # url(r'^accounts/', include('registration.backends.simple.urls')),
     # url( r'^login/$',auth_views.LoginView.as_view, name="login"),

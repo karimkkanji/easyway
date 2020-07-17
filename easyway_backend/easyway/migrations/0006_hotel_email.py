@@ -5,7 +5,7 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
+    atomic= False
     dependencies = [
         ('easyway', '0005_auto_20200713_1152'),
     ]
