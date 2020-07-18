@@ -239,12 +239,12 @@
         <ul>
             </div>
 <ul class="nav">
-    <li class="nav-item"><a class="text-uppercase nav-link text-dark" href="index.html" style="font-family: 'Gilroy-Medium ☞';">Home</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="activities.html" style="font-family: 'Gilroy-Medium ☞';">Activities</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="bungalow.html" style="font-family: 'Gilroy-Medium ☞';">Bungalows</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="hotel.html" style="font-family: 'Gilroy-Medium ☞';">Hotel</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="rent-a-car.html" style="font-family: 'Gilroy-Medium ☞';">Rent a car</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="calendar-reservations.html" style="font-family: 'Gilroy-Medium ☞';">Calendar</a></li>
+    <li class="nav-item"><a class="text-uppercase nav-link text-dark" href="{% url 'index'%}" style="font-family: 'Gilroy-Medium ☞';">Home</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'activities'%}" style="font-family: 'Gilroy-Medium ☞';">Activities</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'bungalow'%}" style="font-family: 'Gilroy-Medium ☞';">Bungalows</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'hotels'%}" style="font-family: 'Gilroy-Medium ☞';">Hotel</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'rent_cars'%}" style="font-family: 'Gilroy-Medium ☞';">Rent a car</a></li>
+   <li class="nav-item"><a class="nav-link text-dark" href="{% url 'calendar_reserv'%}" style="font-family: 'Gilroy-Medium ☞';">Calendar</a></li>>
 </ul>
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

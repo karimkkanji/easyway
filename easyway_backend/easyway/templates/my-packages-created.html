@@ -39,7 +39,7 @@
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item dropdown dropdown-menu-right" style="margin-top: 20px;"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><img class="rounded-circle" src="assets/img/profile.jpg" width="50px"></a>
+                    <li class="nav-item dropdown dropdown-menu-right" style="margin-top: 20px;"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><img class="rounded-circle" src="../media/assets/img/profile.jpg" width="50px"></a>
                         <div class="dropdown-menu" role="menu" style="line-height: 2;"><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';" data-toggle="modal" data-target="#profile">My Profile</a><a class="dropdown-item" role="presentation" href="calendar-reservations.html"
                                 style="font-family: 'SF UI Text Medium';">Calendar</a><a class="dropdown-item" role="presentation" href="my-reservations.html" style="font-family: 'SF UI Text Medium';">My Reservation</a><a class="dropdown-item" role="presentation"
                                 href="packages-created.html" style="font-family: 'SF UI Text Medium';">My Packages</a><a class="dropdown-item" role="presentation" href="create-activity.html" style="font-family: 'SF UI Text Medium';">Create</a><a class="dropdown-item"
@@ -76,7 +76,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content" style="border-radius: 25px;">
                 <div class="modal-body">
-                    <div class="text-center mx-auto"><img class="rounded-circle" src="assets/img/profile.jpg" width="50px" style="width: 60px;">
+                    <div class="text-center mx-auto"><img class="rounded-circle" src="..media/assets/img/profile.jpg" width="50px" style="width: 60px;">
                         <p style="font-family: 'SF UI Text Medium';">Change Profile Photo</p>
                     </div><input type="text" class="form-control" placeholder="First Name" style="border-radius: 10px 10px 0 0;border: solid 1.4px;font-family: 'SF UI Text Light';"><input type="text" class="form-control" placeholder="Last Name" style="border-radius: 0 0 10px 10px;border: solid 1.4px;font-family: 'SF UI Text Light';">
                     <small
@@ -102,13 +102,12 @@
         <ul>
             </div>
 <ul class="nav">
-    <li class="nav-item"><a class="text-uppercase nav-link text-dark" href="index.html" style="font-family: 'Gilroy-Medium ☞';">Home</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="activities.html" style="font-family: 'Gilroy-Medium ☞';">Activities</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="bungalow.html" style="font-family: 'Gilroy-Medium ☞';">Bungalows</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="hotel.html" style="font-family: 'Gilroy-Medium ☞';">Hotel</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="rent-a-car.html" style="font-family: 'Gilroy-Medium ☞';">Rent a car</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="calendar-reservations.html" style="font-family: 'Gilroy-Medium ☞';">Calendar</a></li>
-</ul>
+    <li class="nav-item"><a class="text-uppercase nav-link text-dark" href="{% url 'index'%}" style="font-family: 'Gilroy-Medium ☞';">Home</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'activities'%}" style="font-family: 'Gilroy-Medium ☞';">Activities</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'bungalow'%}" style="font-family: 'Gilroy-Medium ☞';">Bungalows</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'hotels'%}" style="font-family: 'Gilroy-Medium ☞';">Hotel</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'rent_cars'%}" style="font-family: 'Gilroy-Medium ☞';">Rent a car</a></li>
+   <li class="nav-item"><a class="nav-link text-dark" href="{% url 'calendar_reserv'%}" style="font-family: 'Gilroy-Medium ☞';">Calendar</a></li></ul>
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>

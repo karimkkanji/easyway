@@ -19,6 +19,7 @@ from django.contrib.auth import views
 from django.contrib.auth import views as auth_views
 
 from easyway import views
+from easyway.forms import *
 
 
 
@@ -27,7 +28,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^tinymce/', include('tinymce.urls')),
     url(r'',include('easyway.urls')),
-    # url(r'^accounts/', include('registration.backends.simple.urls')),
-    # url( r'^login/$',auth_views.LoginView.as_view, name="login"),
-    # url(r'^logout/$', auth_views.LogoutView.as_view, {"next_page": '/'}),
+    # url(r'register/', views.register, name='register')
+    url(r'^accounts/', include('registration.backends.simple.urls')),
+    url(r'^login/$',auth_views.LoginView, name="login"),
+    url(r'^logout/$', auth_views.LogoutView, {"next_page": '/'}),
 ]

@@ -61,10 +61,10 @@
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item dropdown dropdown-menu-right" style="margin-top: 20px;"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><img class="rounded-circle" src="../media/assets/img/profile.jpg" width="50px"></a>
-                        <div class="dropdown-menu" role="menu" style="line-height: 2;"><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';" data-toggle="modal" data-target="#profile">My Profile</a><a class="dropdown-item" role="presentation" href="calendar-reservations.html"
-                                style="font-family: 'SF UI Text Medium';">Calendar</a><a class="dropdown-item" role="presentation" href="my-reservations.html" style="font-family: 'SF UI Text Medium';">My Reservation</a><a class="dropdown-item" role="presentation"
-                                href="packages-created.html" style="font-family: 'SF UI Text Medium';">My Packages</a><a class="dropdown-item" role="presentation" href="create-activity.html" style="font-family: 'SF UI Text Medium';">Create</a><a class="dropdown-item"
-                                role="presentation" href="#" style="font-family: 'SF UI Text Medium';color: #F76565;">Sign In / Sign Up</a></div>
+                        <div class="dropdown-menu" role="menu" style="line-height: 2;"><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';" data-toggle="modal" data-target="#profile">My Profile</a><a class="dropdown-item" role="presentation" href="{% url 'calendar_reserv'%}"
+                                style="font-family: 'SF UI Text Medium';">Calendar</a><a class="dropdown-item" role="presentation" href="{% url 'my_reservations'%}" style="font-family: 'SF UI Text Medium';">My Reservation</a><a class="dropdown-item" role="presentation"
+                                href="{% url 'create_packages'%}" style="font-family: 'SF UI Text Medium';">My Packages</a><a class="dropdown-item" role="presentation" href="{% url 'create_activity'%}" style="font-family: 'SF UI Text Medium';">Create</a><a class="dropdown-item"
+                                role="presentation" href="{% url 'login'%}" style="font-family: 'SF UI Text Medium';color: #F76565;">Sign In / Sign Up</a></div>
                     </li>
                 </ul>
         </div>
@@ -105,7 +105,7 @@
                             <div
                                 class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';">Bus<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div><small class="form-text text-muted" style="margin-top: -16px;margin-left: 2px;margin-bottom: 20px;font-family: 'SF UI Text Light';">60 Places</small></a>
                         <div
-                            class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Semibold';">Rent a car<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a></div>
+                            class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="{% url 'rent_cars'%}" style="font-family: 'SF UI Text Semibold';">Rent a car<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a></div>
             </div>
         </div>
     </div>
@@ -117,19 +117,19 @@
         <div class="card-group" style="margin-top: 10px;margin-bottom: 80px;">
             <div class="card" style="margin: 10px;height: 220px;border: none;">
                 <div class="card-body text-light" style="border-radius: 26px;background-image: url(&quot;../media/assets/img/experience1.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);"
-                    onclick="document.location=&quot;activities.html&quot;">
+                    onclick="document.location=&quot;activities&quot;">
                     <h4 class="card-title text-center mx-auto" style="font-family: 'Gilroy-Bold ☞';margin-bottom: 3px;margin-top: 75px;">Activities</h4>
                 </div>
             </div>
             <div class="card" style="margin: 10px;height: 220px;border: none;">
                 <div class="card-body text-light" style="border-radius: 26px;background-image: url(&quot;../media/assets/img/christian-lambert-vmIWr-6@2x.png&quot;);background-position: center;background-size: auto;background-repeat: no-repeat;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);"
-                    onclick="document.location = &quot;bungalow.html&quot;">
+                    onclick="document.location = &quot;bungalow&quot;">
                     <h4 class="card-title text-center mx-auto" style="font-family: 'Gilroy-Bold ☞';margin-bottom: 3px;margin-top: 75px;">Bungalow</h4>
                 </div>
             </div>
             <div class="card" style="margin: 10px;height: 220px;border: none;">
                 <div class="card-body text-light" style="border-radius: 26px;background-image: url(&quot;../media/assets/img/sara-dubler-Koei_-1.png&quot;);background-position: center;background-size: auto;background-repeat: no-repeat;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);"
-                    onclick="document.location = &quot;hotel.html&quot;">
+                    onclick="document.location = &quot;hotels&quot;">
                     <h4 class="card-title text-center mx-auto" style="font-family: 'Gilroy-Bold ☞';margin-bottom: 3px;margin-top: 75px;">Hotel</h4>
                 </div>
             </div>
@@ -165,12 +165,12 @@
         <ul>
             </div>
 <ul class="nav">
-    <li class="nav-item"><a class="text-uppercase nav-link text-dark" href="index.html" style="font-family: 'Gilroy-Medium ☞';">Home</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="activities.html" style="font-family: 'Gilroy-Medium ☞';">Activities</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="bungalow.html" style="font-family: 'Gilroy-Medium ☞';">Bungalows</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="hotel.html" style="font-family: 'Gilroy-Medium ☞';">Hotel</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="rent-a-car.html" style="font-family: 'Gilroy-Medium ☞';">Rent a car</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="calendar-reservations.html" style="font-family: 'Gilroy-Medium ☞';">Calendar</a></li>
+    <li class="nav-item"><a class="text-uppercase nav-link text-dark" href="{% url 'index'%}" style="font-family: 'Gilroy-Medium ☞';">Home</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'activities'%}" style="font-family: 'Gilroy-Medium ☞';">Activities</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'bungalow'%}" style="font-family: 'Gilroy-Medium ☞';">Bungalows</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'hotels'%}" style="font-family: 'Gilroy-Medium ☞';">Hotel</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'rent_cars'%}" style="font-family: 'Gilroy-Medium ☞';">Rent a car</a></li>
+   <li class="nav-item"><a class="nav-link text-dark" href="{% url 'calendar_reserv'%}" style="font-family: 'Gilroy-Medium ☞';">Calendar</a></li>
 </ul>
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
