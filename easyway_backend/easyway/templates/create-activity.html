@@ -60,10 +60,10 @@
                         <li class="list-group-item" style="border: none;font-family: 'SF UI Text Light';"><i class="fas fa-plus-square" style="margin-right: 10px;color: #F76565;"></i><span style="color: #F76565;font-family: 'SF UI Text Bold';">Create</span>
                             <ul class="list-unstyled" style="margin-left: 20px;">
                                 <li style="margin: 5px;color: #F76565;font-family: 'SF UI Text Bold';">Activity</li>
-                                <li style="margin: 5px;"><a class="text-dark" href="create-event.html">Event<br></a></li>
-                                <li style="margin: 5px;"><a class="text-dark" href="create-bungalow.html">Bungalow<br></a></li>
+                                <li style="margin: 5px;"><a class="text-dark" href="{% url 'create_event'%}">Event<br></a></li>
+                                <li style="margin: 5px;"><a class="text-dark" href="{% url 'create_bungalow'%}">Bungalow<br></a></li>
                                 <li style="margin: 5px;">Hotel</li>
-                                <li style="margin: 5px;"><a class="text-dark" href="create-car.html">Car to rent<br></a></li>
+                                <li style="margin: 5px;"><a class="text-dark" href="{% url 'create_car'%}">Car to rent<br></a></li>
                             </ul>
                         </li>
                         <li class="list-group-item" style="border: none !important;"><i class="far fa-calendar-alt" style="margin-right: 10px;"></i><span>Calendar</span></li>

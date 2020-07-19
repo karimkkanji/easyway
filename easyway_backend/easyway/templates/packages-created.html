@@ -40,9 +40,9 @@
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item dropdown dropdown-menu-right" style="margin-top: 20px;"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><img class="rounded-circle" src="../media/assets/img/profile.jpg" width="50px"></a>
-                        <div class="dropdown-menu" role="menu" style="line-height: 2;"><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';" data-toggle="modal" data-target="#profile">My Profile</a><a class="dropdown-item" role="presentation" href="calendar-reservations.html"
-                                style="font-family: 'SF UI Text Medium';">Calendar</a><a class="dropdown-item" role="presentation" href="my-reservations.html" style="font-family: 'SF UI Text Medium';">My Reservation</a><a class="dropdown-item" role="presentation"
-                                href="packages-created.html" style="font-family: 'SF UI Text Medium';">My Packages</a><a class="dropdown-item" role="presentation" href="create-activity.html" style="font-family: 'SF UI Text Medium';">Create</a><a class="dropdown-item"
+                        <div class="dropdown-menu" role="menu" style="line-height: 2;"><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';" data-toggle="modal" data-target="#profile">My Profile</a><a class="dropdown-item" role="presentation" href="{% url 'calendar_reserv'%}"
+                                style="font-family: 'SF UI Text Medium';">Calendar</a><a class="dropdown-item" role="presentation" href="{% url 'my_reservations'%}" style="font-family: 'SF UI Text Medium';">My Reservation</a><a class="dropdown-item" role="presentation"
+                                href="{% url 'create_packages'%}" style="font-family: 'SF UI Text Medium';">My Packages</a><a class="dropdown-item" role="presentation" href="{% url 'create_activity'%}" style="font-family: 'SF UI Text Medium';">Create</a><a class="dropdown-item"
                                 role="presentation" href="#" style="font-family: 'SF UI Text Medium';color: #F76565;">Sign In / Sign Up</a></div>
                     </li>
                 </ul>
@@ -62,7 +62,7 @@
                         <li class="list-group-item" style="border: none !important;"><i class="fas fa-hand-holding-heart" style="margin-right: 10px;color: #F76565;"></i><span style="color: #F76565;font-family: 'SF UI Text Bold';">My Packages</span>
                             <ul class="list-unstyled" style="margin-left: 20px;">
                                 <li style="margin: 5px;color: #F76565;font-family: 'SF UI Text Bold';">Created</li>
-                                <li style="margin: 5px;"><a class="text-dark" href="my-packages-created.html">Confirmed Activities<br></a></li>
+                                <li style="margin: 5px;"><a class="text-dark" href="{% url 'create_mypackage'%}">Confirmed Activities<br></a></li>
                                 <li style="margin: 5px;"></li>
                             </ul>
                         </li>
@@ -74,17 +74,17 @@
                             <div class="card" style="margin-top: 35px;border: none;border-radius: 25px;box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
                                 <div class="card-body">
                                     <div class="row" style="margin: -20px -20px 20px -20px;">
-                                        <div class="col-md-5" style="background-image: url(&quot;assets/img/experience8.jpg&quot;);background-size: cover;border-radius: 26px 0 0 0;background-repeat: no-repeat;height: 234px;"><span></span></div>
+                                        <div class="col-md-5" style="background-image: url(&quot;../media/assets/img/experience8.jpg&quot;);background-size: cover;border-radius: 26px 0 0 0;background-repeat: no-repeat;height: 234px;"><span></span></div>
                                         <div class="col-md-7" style="padding: 20px;">
                                             <div class="row">
-                                                <div class="col"><img src="assets/img/experience9.jpg" style="width: 130px;"><span class="float-right"><a class="text-muted" href="#" style="font-family: 'SF UI Text Regular';font-size: 12px;">Remove</a></span></div>
-                                                <div class="col"><img src="assets/img/mateus-araujo-wcxS94XWuSw-unsplash.jpg" style="width: 130px;"><a class="text-muted float-right" href="#" style="font-family: 'SF UI Text Regular';font-size: 12px;">Remove</a></div>
-                                                <div class="col"><img src="assets/img/experience7.jpg" style="width: 130px;"><a class="text-muted float-right" href="#" style="font-family: 'SF UI Text Regular';font-size: 12px;">Remove</a></div>
+                                                <div class="col"><img src="../media/assets/img/experience9.jpg" style="width: 130px;"><span class="float-right"><a class="text-muted" href="#" style="font-family: 'SF UI Text Regular';font-size: 12px;">Remove</a></span></div>
+                                                <div class="col"><img src="../media/assets/img/mateus-araujo-wcxS94XWuSw-unsplash.jpg" style="width: 130px;"><a class="text-muted float-right" href="#" style="font-family: 'SF UI Text Regular';font-size: 12px;">Remove</a></div>
+                                                <div class="col"><img src="../media/assets/img/experience7.jpg" style="width: 130px;"><a class="text-muted float-right" href="#" style="font-family: 'SF UI Text Regular';font-size: 12px;">Remove</a></div>
                                             </div>
                                             <div class="row">
-                                                <div class="col"><img src="assets/img/experience9.jpg" style="width: 130px;"><span class="float-right"><a class="text-muted" href="#" style="font-family: 'SF UI Text Regular';font-size: 12px;">Remove</a></span></div>
-                                                <div class="col"><img src="assets/img/mateus-araujo-wcxS94XWuSw-unsplash.jpg" style="width: 130px;"><a class="text-muted float-right" href="#" style="font-family: 'SF UI Text Regular';font-size: 12px;">Remove</a></div>
-                                                <div class="col"><img src="assets/img/experience7.jpg" style="width: 130px;"><a class="text-muted float-right" href="#" style="font-family: 'SF UI Text Regular';font-size: 12px;">Remove</a></div>
+                                                <div class="col"><img src="../media/assets/img/experience9.jpg" style="width: 130px;"><span class="float-right"><a class="text-muted" href="#" style="font-family: 'SF UI Text Regular';font-size: 12px;">Remove</a></span></div>
+                                                <div class="col"><img src="../media/assets/img/mateus-araujo-wcxS94XWuSw-unsplash.jpg" style="width: 130px;"><a class="text-muted float-right" href="#" style="font-family: 'SF UI Text Regular';font-size: 12px;">Remove</a></div>
+                                                <div class="col"><img src="../media/assets/img/experience7.jpg" style="width: 130px;"><a class="text-muted float-right" href="#" style="font-family: 'SF UI Text Regular';font-size: 12px;">Remove</a></div>
                                             </div>
                                         </div>
                                     </div>

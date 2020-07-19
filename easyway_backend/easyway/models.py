@@ -24,11 +24,12 @@ class customers(models.Model):
 		self.save()
 
 class hotel(models.Model):
-	No_of_guests = models.IntegerField(8)
-	No_of_bedrooms = models.IntegerField(8)
-	No_of_beds = models.IntegerField(8)
-	No_of_baths = models.IntegerField(8)
-	No_of_toilets = models.IntegerField(8)
+	name = models.CharField(max_length = 20, null=True)
+	guests = models.IntegerField(8)
+	bedrooms = models.IntegerField(8)
+	beds = models.IntegerField(8)
+	baths = models.IntegerField(8)
+	toilets = models.IntegerField(8)
 	more_details = models.TextField(max_length =200)
 	# address = map_fields.AddressField(max_length=200, blank=True, null=True)
 	# geolocation = map_fields.GeoLocationField(max_length=100,blank=True, null=True)
@@ -61,3 +62,12 @@ class activities(models.Model):
 	discount_per_person = models.SmallIntegerField(50)
 	group_discount_per_person = models.SmallIntegerField(50)
 	email = models.ForeignKey(customers, on_delete = models.SET_NULL, null=True)
+
+class packages(models.Model):
+	package_id = models.TextField(max_length = 20, null=True)
+	activity_title = models.ForeignKey(activities, on_delete= models.SET_NULL,null=True)
+	car_model = models.ForeignKey(rent_car, on_delete = models.SET_NULL, null=True)
+	car_model = models.ForeignKey(rent_car, on_delete = models.SET_NULL, null=True)
+	name = models.ForeignKey(hotel, on_delete=models.SET_NULL, null=True)
+	username = models.ForeignKey(customers, on_delete = models.SET_NULL, null=True)
+
