@@ -13,8 +13,8 @@ def hotels(request):
 
 @login_required(login_url='/accounts/login/')
 def rent_cars(request):
-
     return render(request, "rent-a-car.html")
+
 @login_required(login_url='/accounts/login/')
 def activities(request):
     return render(request, "activities.html")

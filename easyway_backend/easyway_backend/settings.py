@@ -38,12 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'rest_framework',
-    # 'corsheaders',
+    'rest_framework',
+    'corsheaders',
     'tinymce',
     'easyway',
     'django_google_maps',
-    # 'bootstrap3',
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
