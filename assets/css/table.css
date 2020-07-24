@@ -1,0 +1,26 @@
+table, tr, td, th {
+  border: 1px solid;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+}
+
+table tr:last-child td:first-child, tr:last-child, table {
+  border-bottom-left-radius: 25px;
+}
+
+table tr:last-child td:last-child, tr:last-child, table {
+  border-bottom-right-radius: 25px;
+}
+
+table tr:first-child th:first-child, tr:first-child, table {
+  border-top-left-radius: 25px;
+}
+
+table tr:first-child th:last-child, tr:first-child, table {
+  border-top-right-radius: 25px;
+}
+

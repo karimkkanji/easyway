@@ -1,13 +1,11 @@
-var DatePicker = tui.DatePicker;
-    var container = document.getElementById('tui-date-picker-container');
-var target = document.getElementById('tui-date-picker-target');
-
-
-var instance = new DatePicker(container, {
-    input: {
-        element: target
-    },
-
+var today, datepicker;
+today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+$('.datepicker-home').datepicker({
+    uiLibrary: 'bootstrap4',
+    minDate: today,
+    showOtherMonths: true,
+    showOnFocus: true, 
+    showRightIcon: false
 });
 
-instance.getDate();
+
