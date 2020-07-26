@@ -1,0 +1,8 @@
+The Api allows creation and fetching of customers list, with their corresponding details.
+
+with the corresponding database fields as defined by models, user can add their details 
+and or update their details.
+
+The doc strings in the api side code will aid in integrating the front end.
+
+Reinstall the dev requirements

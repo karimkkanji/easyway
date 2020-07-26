@@ -1,12 +1,186 @@
-
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<title>EasyWay</title>
 </head>
 <body bgcolor="#BDBDBD">
 	<center>
-<h1>Welcome to EasyWay backend</h1>
+<h1>Welcome to EasyWay</h1>
+
 </center>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>easyway</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../media/assets/css/Gilroy-Bold%20☞.css">
+    <link rel="stylesheet" href="../media/assets/css/Gilroy-Heavy%20☞.css">
+    <link rel="stylesheet" href="../media/assets/css/Gilroy-Light%20☞.css">
+    <link rel="stylesheet" href="../media/assets/css/Gilroy-Medium%20☞.css">
+    <link rel="stylesheet" href="../media/assets/css/Gilroy-Regular%20☞.css">
+    <link rel="stylesheet" href="../media/assets/css/HolidayFree.css">
+    <link rel="stylesheet" href="../media/assets/css/SF%20UI%20Text%20Bold.css">
+    <link rel="stylesheet" href="../media/assets/css/SF%20UI%20Text%20Bold%20Italic.css">
+    <link rel="stylesheet" href="../media/assets/css/SF%20UI%20Text%20Heavy.css">
+    <link rel="stylesheet" href="../media/assets/css/SF%20UI%20Text%20Heavy%20Italic.css">
+    <link rel="stylesheet" href="../media/assets/css/SF%20UI%20Text%20Italic.css">
+    <link rel="stylesheet" href="../media/assets/css/SF%20UI%20Text%20Light.css">
+    <link rel="stylesheet" href="../media/assets/css/SF%20UI%20Text%20Light%20Italic.css">
+    <link rel="stylesheet" href="../media/assets/css/SF%20UI%20Text%20Medium.css">
+    <link rel="stylesheet" href="../media/assets/css/SF%20UI%20Text%20Medium%20Italic.css">
+    <link rel="stylesheet" href="../media/assets/css/SF%20UI%20Text%20Regular.css">
+    <link rel="stylesheet" href="../media/assets/css/SF%20UI%20Text%20Semibold.css">
+    <link rel="stylesheet" href="../media/assets/css/SF%20UI%20Text%20Semibold%20Italic.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../media/assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="../media/assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="../media/assets/css/styles.css">
+<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
+
+<!-- If you use the default popups, use this. -->
+
+
+<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.css" />
+
+<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand sticky-top navigation-clean-search" style="background-color: #F76565;height: 50px;">
+        <div class="container"><a class="navbar-brand" href="./" style="font-family: HolidayFree;font-size: 30px;">EasyWay</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item dropdown dropdown-menu-right" style="margin-top: 20px;"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><img class="rounded-circle" src="../media/assets/img/profile.jpg" width="50px"></a>
+                        <div class="dropdown-menu" role="menu" style="line-height: 2;"><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';" data-toggle="modal" data-target="#profile">My Profile</a><a class="dropdown-item" role="presentation" href="{% url 'calendar_reserv'%}"
+                                style="font-family: 'SF UI Text Medium';">Calendar</a><a class="dropdown-item" role="presentation" href="{% url 'my_reservations'%}" style="font-family: 'SF UI Text Medium';">My Reservation</a><a class="dropdown-item" role="presentation"
+                                href="{% url 'create_packages'%}" style="font-family: 'SF UI Text Medium';">My Packages</a><a class="dropdown-item" role="presentation" href="{% url 'create_activity'%}" style="font-family: 'SF UI Text Medium';">Create</a><a class="dropdown-item"
+                                role="presentation" href="#" style="font-family: 'SF UI Text Medium';color: #F76565;">Sign In / Sign Up</a></div>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="container" style="margin-top: 50px;">
+        <h4 style="font-family: 'Gilroy-Medium ☞';margin-left: -9px;">Explore Mauritius</h4>
+    </div>
+    <div class="container" style="margin-bottom: 60px;">
+        <div class="row" style="border-radius: 25px;box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+            <div class="col-md-3">
+                <div style="padding: 10px 10px 0 10px;margin-top: 10px;border-right: 1px #c8c8c8 solid;">
+                    <h6 class="text-uppercase" style="font-family: 'SF UI Text Semibold';margin-bottom: 3px;font-size: 12px;">Location</h6>
+                </div>
+                <div class="dropdown" style="margin-bottom: 20px;"><button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Where are you going?</button>
+                    <div class="dropdown-menu" role="menu" style="width: 245px;margin-left: 25px;"><a class="dropdown-item" role="presentation" href="#">North<div class="container-check"><input type="checkbox" checked=""><span class="checkmark"></span></div></a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">South<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">East<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">West<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">Around Mauritius<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div style="padding: 10px 10px 0 10px;margin-top: 10px;border-right: 1px #c8c8c8 solid;">
+                    <h6 class="text-uppercase" style="font-family: 'SF UI Text Semibold';margin-bottom: 3px;font-size: 12px;">Date of exploration</h6><div class="tui-datepicker-input tui-datetime-input tui-has-focus">
+    <input type="text" placeholder="Add a date" id="tui-date-picker-target" aria-label="Date-Time" style="outline: none; width:100px;">
+</div>
+
+<div id="tui-date-picker-container" style="margin-top: -1px;"></div></div>
+            </div>
+            <div class="col-md-3">
+                <div style="padding: 10px 10px 0 10px;margin-top: 10px;/*border-right: 1px #c8c8c8 solid;*/">
+                    <h6 class="text-uppercase" style="font-family: 'SF UI Text Semibold';margin-bottom: 3px;font-size: 12px;">Places</h6>
+                    <div class="dropdown" style="margin-bottom: 20px;"><button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="font-family: 'SF UI Text Light';">Choose your transport</button>
+                        <div class="dropdown-menu" role="menu" style="width: 245px;margin-left: 25px;"><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';">Van<div class="container-check"><input type="checkbox" checked=""><span class="checkmark"></span></div></a><small class="form-text text-muted"
+                                style="margin-top: -20px;margin-left: 25px;margin-bottom: 20px;font-family: 'SF UI Text Light';">15 Places</small>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';">Minibus<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div><small class="form-text text-muted" style="margin-top: -16px;margin-left: 2px;margin-bottom: 20px;font-family: 'SF UI Text Light';">35 Places</small></a>
+                            <div
+                                class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#" style="font-family: 'SF UI Text Medium';">Bus<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div><small class="form-text text-muted" style="margin-top: -16px;margin-left: 2px;margin-bottom: 20px;font-family: 'SF UI Text Light';">60 Places</small></a>
+                        <div
+                            class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="{% url 'rent_cars'%}" style="font-family: 'SF UI Text Semibold';">Rent a car<div class="container-check"><input type="checkbox"><span class="checkmark"></span></div></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"><button class="btn btn-danger btn-lg float-right" type="button" style="margin-top: 21px;padding: 10px 50px;border-radius: 12px;background: rgb(255,49,81);background: linear-gradient(144deg, rgba(255,49,81,1) 0%, rgba(232,28,84,1) 35%, rgba(204,1,88,1) 100%);">Reserve</button></div>
+    </div>
+    </div>
+    <div class="container">
+        <h1 class="text-danger" style="font-family: HolidayFree;">Embrace <br>&nbsp; Mauritius</h1>
+        <div class="card-group" style="margin-top: 10px;margin-bottom: 80px;">
+            <div class="card" style="margin: 10px;height: 220px;border: none;">
+                <div class="card-body text-light" style="border-radius: 26px;background-image: url(&quot;../media/assets/img/experience1.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);"
+                    onclick="document.location=&quot;activities&quot;">
+                    <h4 class="card-title text-center mx-auto" style="font-family: 'Gilroy-Bold ☞';margin-bottom: 3px;margin-top: 75px;">Activities</h4>
+                </div>
+            </div>
+            <div class="card" style="margin: 10px;height: 220px;border: none;">
+                <div class="card-body text-light" style="border-radius: 26px;background-image: url(&quot;../media/assets/img/christian-lambert-vmIWr-6@2x.png&quot;);background-position: center;background-size: auto;background-repeat: no-repeat;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);"
+                    onclick="document.location = &quot;bungalow&quot;">
+                    <h4 class="card-title text-center mx-auto" style="font-family: 'Gilroy-Bold ☞';margin-bottom: 3px;margin-top: 75px;">Bungalow</h4>
+                </div>
+            </div>
+            <div class="card" style="margin: 10px;height: 220px;border: none;">
+                <div class="card-body text-light" style="border-radius: 26px;background-image: url(&quot;../media/assets/img/sara-dubler-Koei_-1.png&quot;);background-position: center;background-size: auto;background-repeat: no-repeat;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);"
+                    onclick="document.location = &quot;hotels&quot;">
+                    <h4 class="card-title text-center mx-auto" style="font-family: 'Gilroy-Bold ☞';margin-bottom: 3px;margin-top: 75px;">Hotel</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="profile">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 25px;">
+                <div class="modal-body">
+                    <div class="text-center mx-auto"><img class="rounded-circle" src="../media/assets/img/profile.jpg" width="50px" style="width: 60px;">
+                        <p style="font-family: 'SF UI Text Medium';">Change Profile Photo</p>
+                    </div><input type="text" class="form-control" placeholder="First Name" style="border-radius: 10px 10px 0 0;border: solid 1.4px;font-family: 'SF UI Text Light';"><input type="text" class="form-control" placeholder="Last Name" style="border-radius: 0 0 10px 10px;border: solid 1.4px;font-family: 'SF UI Text Light';">
+                    <small
+                        class="form-text text-muted" style="font-family: 'SF UI Text Light';">Make sure it matches the name on your government ID<br></small>
+                        <div class="form-group"><input class="form-control" placeholder="Birthdate" style="margin-top: 20px;border-radius: 10px;border: solid 1.4px;font-family: 'SF UI Text Light';"><small class="form-text text-muted" style="font-family: 'SF UI Text Light';">You need to be at least 18. Your birthday information won’t be share with other people who use EasyWay<br></small></div>
+                        <div
+                            class="form-group"><input type="email" class="form-control" placeholder="Email Address" style="border-radius: 10px;border: solid 1.4px;font-family: 'SF UI Text Light';"><small class="form-text text-muted" style="font-family: 'SF UI Text Light';">We’ll email you trip confirmations and receipts<br></small></div>
+                <div
+                    class="form-group"><input type="tel" class="form-control" placeholder="Phone Number" style="border: solid 1.4px;border-radius: 10px;font-family: 'SF UI Text Light';"></div>
+            <div class="form-group"><input type="password" class="form-control" placeholder="Password" style="margin-top: 20px;border: solid 1.4px;border-radius: 10px;font-family: 'SF UI Text Light';"></div>
+            <div class="form-group"><small class="form-text text-muted" style="font-family: 'SF UI Text Light';">Card Account Number<br></small><input type="text" class="form-control" style="border-radius: 10px;border: solid 1.4px;font-family: 'SF UI Text Light';" placeholder="**** **** 7811"></div>
+            <div
+                class="text-center mx-auto"><button class="btn" type="button" style="color: #F76565;font-family: 'SF UI Text Medium';">Confirm</button></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="container" style="margin-top: 10px;border-top: solid 1px #ff0000;padding-top: 20px;margin-bottom: 20px;"><div class="float-right" style="">
+    <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fab fa-facebook-f" style="font-size: 26px;"></i></a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fab fa-instagram" style="font-size: 26px;"></i></a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="far fa-envelope" style="font-size: 26px;"></i><span style="font-family: 'Gilroy-Medium ☞'; margin-left:8px;"> Contact us</span></a></li>
+        <ul>
+            </div>
+<ul class="nav">
+    <li class="nav-item"><a class="text-uppercase nav-link text-dark" href="{% url 'index'%}" style="font-family: 'Gilroy-Medium ☞';">Home</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'activities'%}" style="font-family: 'Gilroy-Medium ☞';">Activities</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'bungalow'%}" style="font-family: 'Gilroy-Medium ☞';">Bungalows</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'hotels'%}" style="font-family: 'Gilroy-Medium ☞';">Hotel</a></li>
+    <li class="nav-item"><a class="nav-link text-dark" href="{% url 'rent_cars'%}" style="font-family: 'Gilroy-Medium ☞';">Rent a car</a></li>
+   <li class="nav-item"><a class="nav-link text-dark" href="{% url 'calendar_reserv'%}" style="font-family: 'Gilroy-Medium ☞';">Calendar</a></li>
+</ul>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://uicdn.toast.com/tui.code-snippet/latest/tui-code-snippet.js"></script>
+    <script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js"></script>
+    <script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.min.js"></script>
+    <script src="https://uicdn.toast.com/tui.dom/v3.0.0/tui-dom.js"></script>
+    <script src="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.min.js"></script>
+    <script src="../media/assets/js/initialise.js"></script>
+</body>
+
 </html>

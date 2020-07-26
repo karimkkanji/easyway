@@ -7,7 +7,7 @@ import django_google_maps.fields
 
 
 class Migration(migrations.Migration):
-
+    atomic=False
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
         ('easyway', '0001_initial'),
