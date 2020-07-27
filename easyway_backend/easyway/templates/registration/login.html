@@ -17,18 +17,21 @@
         </div>
         <div class="panel-body">
 
-          <form  action="/accounts/login/" method="post">
+          <form  action="{% url 'login' %}" method="post">
             {% csrf_token %}
-            {% bootstrap_form form%}
 
             <div class="form-group">
+              <label for="username">Username:</label>
+              <input type="text" name="username" placeholder="Username">
+              <label for="password">Password:</label>
+              <input type="password" name="password" placeholder="Password">
               <input type="submit" class="btn btn-primary btn-sm" value="Login">
             </div>
 
             <input type="hidden" name="next" value="{{next}}">
 
           </form>
-          <a href="{% url 'registration_register' %}">Register</a>
+          <a href="{% url 'signup' %}">Signup</a>
 
         </div>
 

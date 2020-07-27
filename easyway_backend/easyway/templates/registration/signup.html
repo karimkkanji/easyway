@@ -31,50 +31,48 @@
     <link rel="stylesheet" href="../media/assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="../media/assets/css/Header-Blue.css">
     <link rel="stylesheet" href="../media/assets/css/styles.css">
-<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
-
-<!-- If you use the default popups, use this. -->
-
-
-<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.css" />
-
-<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.css" />
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-expand sticky-top navigation-clean-search" style="background-color: #F76565;height: 50px;">
         <div class="container"><a class="navbar-brand" href="./" style="font-family: HolidayFree;font-size: 30px;">EasyWay</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+
     </nav>
-<center>
-<div class="container">    
-          {# Some logic on what to display for last item#}
-          {% if user.is_authenticated %}
-            <a href="{% url 'logout' %}">Logout</a>
-          {% else %}
-         <a class="navbar-link" href="{% url 'login' %}">Login</a>
-          {% endif %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <!-- Empty div -->
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      {% if form.errors %}
+        <p> Some Information Might be Incorrect </p>
+      {% endif %}
+      <div class="panel panel-default">
+
+        <div class="panel-heading">
+          <h3 class="text-center">EasyWay Sign Up</h3>
+        </div>
+        <div class="panel-body">
+
+          
+          <form action="{% url 'signup' %}" method="post">
+          {% csrf_token %}
+          {{ form.as_p }}   
+
+          <input type="submit" value="Signup" />
+
+          </form>
+          <p>You Already have an account?</p>
+ <a href="{% url 'login' %}">Login</a>
+        </div>
+
       </div>
-    <div class="container">
-    {% block body_block %}
-    {% endblock %}
+
     </div>
-    </center>
+    <!-- empty div -->
+    <div class="col-md-4"></div>
+  </div>
+</div>
 
-
-
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://uicdn.toast.com/tui.code-snippet/latest/tui-code-snippet.js"></script>
-    <script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js"></script>
-    <script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.min.js"></script>
-    <script src="https://uicdn.toast.com/tui.dom/v3.0.0/tui-dom.js"></script>
-    <script src="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.min.js"></script>
-    <script src="../media/assets/js/initialise.js"></script>
-</body>
-
-</html>
+{% endblock %}

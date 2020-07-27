@@ -16,7 +16,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
+AUTH_USER_MODEL = "easyway.user" 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -26,7 +26,7 @@ SECRET_KEY = 'hfhfhfjfjkdkdjdq9n6dhq0!i#71o2&jp%9q$8x%4x+onll!@2ja$((79u3l4!fn4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', '3b70524cd5ac.ngrok.io', 'eacf0b05accd.ngrok.io']
 
 
 # Application definition

@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns=[
     # url(r'^$', views.login_redirect, name='login_redirect'),
-    url(r'^$',views.index, name='index'),
+    url('^$',views.index, name='index'),
     url(r'^hotels/$', views.hotels, name='hotels'),
     url(r'^rent_cars/$', views.rent_cars, name='rent_cars'),
     url(r'^activities/$', views.activities, name='activities'),
@@ -28,6 +28,11 @@ urlpatterns=[
     url(r'^event_2/$', views.event_2, name='event_2'),
     url(r'^event_3/$', views.event_3, name='event_3'),
     url(r'^bungalow_1/$', views.bungalow_1, name='bungalow_1'),
+    url(r'^signup/$', views.signup, name='signup'),
+    url(r'special/',views.special,name='special'),
+    url(r'^login/$', views.login, name='login'),
+    url(r'^logout/$', views.logout, name='logout'),
+
     ]
 
 if settings.DEBUG:
