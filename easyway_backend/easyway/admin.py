@@ -11,3 +11,7 @@ admin.site.register(hotel)
 admin.site.register(rent_car)
 admin.site.register(activities)
 admin.site.register(packages)
+admin.site.register(book_hotel)
+admin.site.register(book_car)
+admin.site.register(book_activity)
+

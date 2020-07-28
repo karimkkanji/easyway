@@ -40,11 +40,12 @@ class user(AbstractBaseUser,PermissionsMixin):
 		return self.email
 
 class activities(models.Model):
-	activity_title = models.TextField(max_length = 20)
+	easyway_activities = models.CharField(max_length=20)
+	activity_title = models.CharField(max_length = 20)
 	# address = map_fields.AddressField(max_length=200, blank=True, null=True)
-	# geolocation = map_fields.GeoLocationField(max_length=100, blank=True, null=True)
-	days = models.DateTimeField()
-	opening_hours = models.DateTimeField()
+	location = models.CharField(max_length=100,blank=True, null=True)
+	days = models.DateTimeField(null=True)
+	opening_hours = models.DateTimeField(null=True)
 	age = models.CharField(max_length=3)
 	max_persons = models.CharField(max_length=20) 
 	discount_per_person = models.CharField(max_length=50)
@@ -60,7 +61,7 @@ class hotel(models.Model):
 	toilets = models.CharField(max_length=8)
 	more_details = models.TextField(max_length =200)
 	# address = map_fields.AddressField(max_length=200, blank=True, null=True)
-	# geolocation = map_fields.GeoLocationField(max_length=100,blank=True, null=True)
+	location = models.CharField(max_length=100,blank=True, null=True)
 	checkin = models.TimeField(auto_now_add = True)
 	checkout = models.TimeField(auto_now_add = True)
 	discount_per_person = models.CharField(max_length=50)
@@ -74,7 +75,7 @@ class rent_car(models.Model):
 	add_photos = models.ImageField(upload_to = "cars/",null=True)
 	more_details = models.TextField(max_length = 200)
 	# address = map_fields.AddressField(max_length=200,blank=True, null=True)
-	# geolocation = map_fields.GeoLocationField(max_length=100,blank=True, null=True)
+	location = models.CharField(max_length=100,blank=True, null=True )
 	place_available = models.TextField(20)
 	discount_per_person = models.CharField(max_length=50)
 	activity_title = models.ForeignKey(activities, on_delete = models.SET_NULL, null=True)
@@ -82,8 +83,20 @@ class rent_car(models.Model):
 
 class packages(models.Model):
 	package_id = models.CharField(max_length = 20, null=True)
+	package_name= models.CharField(max_length = 20, null=True)
 	activity_title = models.ForeignKey(activities, on_delete= models.SET_NULL,null=True)
-	car_model = models.ForeignKey(rent_car, on_delete = models.SET_NULL, null=True)
 	car_model = models.ForeignKey(rent_car, on_delete = models.SET_NULL, null=True)
 	name = models.ForeignKey(hotel, on_delete=models.SET_NULL, null=True)
 	email = models.ForeignKey(user, on_delete = models.SET_NULL, null=True)
+
+class book_hotel(models.Model):
+	hotel = models.ManyToManyField(hotel, help_text='Select a name for this hotel')
+	email = models.ForeignKey(user, on_delete=models.SET_NULL, null=True)
+
+class book_activity(models.Model):
+	activities = models.ManyToManyField(activities, help_text='Select a title for this activity')
+	email = models.ForeignKey(user, on_delete=models.SET_NULL, null=True)
+
+class book_car(models.Model):
+	rent_car = models.ManyToManyField(rent_car, help_text='Select a model for this car')
+	email = models.ForeignKey(user, on_delete=models.SET_NULL, null=True)
