@@ -26,7 +26,7 @@ SECRET_KEY = 'hfhfhfjfjkdkdjdq9n6dhq0!i#71o2&jp%9q$8x%4x+onll!@2ja$((79u3l4!fn4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '3b70524cd5ac.ngrok.io', 'eacf0b05accd.ngrok.io']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,12 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'corsheaders',
-    'tinymce',
     'easyway',
     'django_google_maps',
-    'bootstrap3',
+
 ]
 
 MIDDLEWARE = [
