@@ -72,7 +72,9 @@
                     </ul>
                 </div>
                 <div class="col-md-9">
-                    <form>
+                    <form action="create.html" method="post">
+                        {% csrf_token %}
+                        {% form%}
                         <div class="form-row">
                             <div class="col-md-6" style="font-family: 'SF UI Text Light';">
                                 <div class="form-group"><input class="form-control" type="text" placeholder="Title of the activity"></div><label>Add Photos</label>
@@ -144,7 +146,8 @@
             <div class="form-group"><input type="password" class="form-control" placeholder="Password" style="margin-top: 20px;border: solid 1.4px;border-radius: 10px;font-family: 'SF UI Text Light';"></div>
             <div class="form-group"><small class="form-text text-muted" style="font-family: 'SF UI Text Light';">Card Account Number<br></small><input type="text" class="form-control" style="border-radius: 10px;border: solid 1.4px;font-family: 'SF UI Text Light';" placeholder="**** **** 7811"></div>
             <div
-                class="text-center mx-auto"><button class="btn" type="button" style="color: #F76565;font-family: 'SF UI Text Medium';">Confirm</button></div>
+                class="text-center mx-auto">
+                <input type="submit" value="submit" name=""> style="color: #F76565;font-family: 'SF UI Text Medium';">Confirm</button></div>
     </div>
     </div>
     </div>

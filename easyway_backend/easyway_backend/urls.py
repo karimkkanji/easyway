@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 from django.contrib.auth import views
-from django.contrib.auth import views as auth_views
+# from django.contrib.auth import views as auth_views
 
 from easyway import views
 from easyway.forms import *
@@ -26,9 +26,5 @@ from easyway.forms import *
 urlpatterns = [
 
     url(r'^admin/', admin.site.urls),
-    url(r'^tinymce/', include('tinymce.urls')),
     url(r'',include('easyway.urls')),
-    url(r'^accounts/', include('registration.backends.simple.urls')),
-    url(r'^login/$', auth_views.login, name='login'),
-    url(r'^logout/$', auth_views.logout, {"next_page": '/'}),
 ]
