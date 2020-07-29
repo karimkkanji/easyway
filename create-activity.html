@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>easyway</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Gilroy-Bold%20☞.css">
     <link rel="stylesheet" href="assets/css/Gilroy-Heavy%20☞.css">
     <link rel="stylesheet" href="assets/css/Gilroy-Light%20☞.css">
@@ -25,11 +25,12 @@
     <link rel="stylesheet" href="assets/css/SF%20UI%20Text%20Semibold.css">
     <link rel="stylesheet" href="assets/css/SF%20UI%20Text%20Semibold%20Italic.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/Header-Blue.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/table.css">
 </head>
 
@@ -81,45 +82,75 @@
                                         <div class="col-md-3"><a href="#">Open Map<br></a></div>
                                     </div>
                                 </div><label>Opening Days</label>
-                                <div class="form-group"><select class="form-control" multiple=""><option value="Sunday">Sunday</option><option value="Monday">Monday</option><option value="Tuesday">Tuesday</option><option value="Wednesday">Wednesday</option><option value="Thursday">Thursday</option><option value="Friday">Friday</option><option value="Saturday">Saturday</option></select></div><label>Opening Hours</label>
-                                <div
-                                    class="form-group">
+                                <div class="form-group"><div class="form-group">
+    <div class="selectgroup selectgroup-pills">
+      <label class="selectgroup-item">
+        <input type="checkbox" name="value" value="HTML" class="selectgroup-input">
+        <span class="selectgroup-button">Sun</span>
+      </label>
+      <label class="selectgroup-item">
+        <input type="checkbox" name="value" value="C++" class="selectgroup-input">
+        <span class="selectgroup-button">Mon</span>
+      </label>
+      <label class="selectgroup-item">
+        <input type="checkbox" name="value" value="CSS" class="selectgroup-input">
+        <span class="selectgroup-button">Tue</span>
+      </label>
+      <label class="selectgroup-item">
+        <input type="checkbox" name="value" value="PHP" class="selectgroup-input">
+        <span class="selectgroup-button">Wed</span>
+      </label>
+      <label class="selectgroup-item">
+        <input type="checkbox" name="value" value="JavaScript" class="selectgroup-input">
+        <span class="selectgroup-button">Thu</span>
+      </label>
+      <label class="selectgroup-item">
+        <input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
+        <span class="selectgroup-button">Fri</span>
+      </label>
+      <label class="selectgroup-item">
+        <input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
+        <span class="selectgroup-button">Sat</span>
+      </label>
+    </div>
+  </div></div><label>Opening Hours</label>
+                                <div class="form-group">
                                     <div class="form-row">
                                         <div class="col-md-5"><input class="form-control" type="time"></div>
                                         <div class="col-md-1"><span>to</span></div>
                                         <div class="col-sm-5"><input class="form-control" type="time"></div>
                                     </div>
-                            </div>
+                                </div>
+                                <div class="form-group"><input class="form-control form-control-lg" type="number" placeholder="Recommended Age"></div>
+                                <div class="form-group"><input class="form-control form-control-lg" type="number" placeholder="Maximum Persons"></div>
+                                <div class="form-group">
+                                    <div class="form-row">
+                                        <div class="col"><input class="form-control form-control-lg" type="text" placeholder="Price/Person" style="margin-top: 32px;"></div>
+                                        <div class="col"><label>Discount Price</label><input class="form-control form-control-lg" type="text" placeholder="Final Price/Person"></div>
+                                    </div><small class="form-text text-muted">EasyWay take 15% on the total price of the reserve purchase of the activity and the&nbsp;additional fun. If a customer cancel the purchase less than 48hours before the&nbsp;confirmation date 35% on the total will be given to you.</small></div>
+                                <div
+                                    class="form-group"><label>Make a discount for big groups of guess</label><input class="form-control form-control-lg" type="text" placeholder="Price / Person"></div><label>for a group above</label>
+                            <div class="form-group"><input class="form-control form-control-lg" type="number" placeholder="Number of Persons"></div>
+                        </div>
+                        <div class="col-md-6" style="font-family: 'SF UI Text Light';">
+                            <div class="form-group"><label>Put additional activities in your package</label><input class="form-control form-control-lg" type="text" placeholder="Title"></div><label>Add Photos</label>
+                            <div class="form-group"><input type="file" multiple=""></div>
+                            <div class="form-group"><textarea class="form-control form-control-lg" placeholder="Description" rows="4"></textarea></div>
                             <div class="form-group"><input class="form-control form-control-lg" type="number" placeholder="Recommended Age"></div>
-                            <div class="form-group"><input class="form-control form-control-lg" type="number" placeholder="Maximum Persons"></div>
                             <div class="form-group">
                                 <div class="form-row">
                                     <div class="col"><input class="form-control form-control-lg" type="text" placeholder="Price/Person" style="margin-top: 32px;"></div>
                                     <div class="col"><label>Discount Price</label><input class="form-control form-control-lg" type="text" placeholder="Final Price/Person"></div>
-                                </div><small class="form-text text-muted">EasyWay take 15% on the total price of the reserve purchase of the activity and the&nbsp;additional fun. If a customer cancel the purchase less than 48hours before the&nbsp;confirmation date 35% on the total will be given to you.</small></div>
-                            <div
-                                class="form-group"><label>Make a discount for big groups of guess</label><input class="form-control form-control-lg" type="text" placeholder="Price / Person"></div><label>for a group above</label>
-                        <div class="form-group"><input class="form-control form-control-lg" type="number" placeholder="Number of Persons"></div>
-                </div>
-                <div class="col-md-6" style="font-family: 'SF UI Text Light';">
-                    <div class="form-group"><label>Put additional activities in your package</label><input class="form-control form-control-lg" type="text" placeholder="Title"></div><label>Add Photos</label>
-                    <div class="form-group"><input type="file" multiple=""></div>
-                    <div class="form-group"><textarea class="form-control form-control-lg" placeholder="Description" rows="4"></textarea></div>
-                    <div class="form-group"><input class="form-control form-control-lg" type="number" placeholder="Recommended Age"></div>
-                    <div class="form-group">
-                        <div class="form-row">
-                            <div class="col"><input class="form-control form-control-lg" type="text" placeholder="Price/Person" style="margin-top: 32px;"></div>
-                            <div class="col"><label>Discount Price</label><input class="form-control form-control-lg" type="text" placeholder="Final Price/Person"></div>
+                                </div>
+                            </div>
+                            <div class="form-group"><label>Make a discount for big groups of guess</label><input class="form-control form-control-lg" type="text" placeholder="Price / Person"></div><label>for a group above</label>
+                            <div class="form-group"><input class="form-control form-control-lg" type="number" placeholder="Number of Persons"></div>
+                            <div class="mx-auto text-center"><a class="text-dark" href="#" style="font-family: 'SF UI Text Heavy';">Add More</a></div>
                         </div>
-                    </div>
-                    <div class="form-group"><label>Make a discount for big groups of guess</label><input class="form-control form-control-lg" type="text" placeholder="Price / Person"></div><label>for a group above</label>
-                    <div class="form-group"><input class="form-control form-control-lg" type="number" placeholder="Number of Persons"></div>
-                    <div class="mx-auto text-center"><a class="text-dark" href="#" style="font-family: 'SF UI Text Heavy';">Add More</a></div>
                 </div>
+                </form>
             </div>
-            </form>
         </div>
-    </div>
     </div>
     </div>
     <div class="container mx-auto text-center" style="margin-top: 20px;margin-bottom: 50px;"><button class="btn btn-primary btn-lg" type="button" style="width: 345px;border-radius: 5px;background: rgb(255,49,81);background: linear-gradient(144deg, rgba(255,49,81,1) 0%, rgba(232,28,84,1) 35%, rgba(204,1,88,1) 100%);">Confirm</button></div>
@@ -200,8 +231,8 @@
                 </div>
             </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
